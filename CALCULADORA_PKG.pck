@@ -12,6 +12,10 @@ CREATE OR REPLACE PACKAGE CALCULADORA_PKG AS
   PRAGMA EXCEPTION_INIT(E_DIVISION_POR_CERO, -20001);
 END CALCULADORA_PKG;
 /
+-- ***************************************
+-- CUERPO DEL PAQUETE (Package Body)
+-- Contiene la lógica interna de cada función.
+-- ***************************************
 CREATE OR REPLACE PACKAGE BODY CALCULADORA_PKG AS
   -- Implementación del Desarrollador A
   FUNCTION SUMAR (p_num1 IN NUMBER, p_num2 IN NUMBER)
