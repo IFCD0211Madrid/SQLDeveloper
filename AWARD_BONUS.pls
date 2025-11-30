@@ -1,8 +1,7 @@
 create or replace PROCEDURE award_bonus (
   emp_id NUMBER, sales_amt NUMBER) 
 AS
-  commission      REAL; -- Comentario añadido
-
+  commission      REAL;
   -- Definimos la excepción aquí para poder usarla en el bloque EXCEPTION
   E_COMM_MISSING EXCEPTION; 
   PRAGMA EXCEPTION_INIT(E_COMM_MISSING, -20001); 
